@@ -1,5 +1,5 @@
 import urllib.request
-import json, datetime, random, time, datetime, os, sys
+import json, datetime, random, time, os
 import string
 from rich import pretty, print
 from rich.console import Console
