@@ -84,6 +84,7 @@ while True:
     elif g == 10 or b == 5:
         print("Script is stopped.")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
+        exit()
 
     else:
         b = b + 1
