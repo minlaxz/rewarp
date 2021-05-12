@@ -68,6 +68,13 @@ def run():
         print(f"[red]{error}[/red]")
 
 
+def reversCount():
+    for i in range(18, 0, -1):
+        print(f"\r{i}\n", end=" ")
+        sys.stdout.flush()
+        time.sleep(1)
+
+
 g = 0
 b = 0
 while True:
@@ -79,8 +86,9 @@ while True:
         print(f"[green] [-] WORK ON ID: {referrer}[/green]")
         print(f"[:)] {g} GB has been successfully added to your account.")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
-        print("[*] After 20 seconds, a new request will be sent.")
-        time.sleep(20)
+        print("[*] After 18 seconds, a new request will be sent.")
+        reversCount()
+
     elif g == 10 or b == 5:
         print("Script is stopped.")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
@@ -93,5 +101,5 @@ while True:
         print(result)
         print("[red][:(] Failed to connect to the server.[/red]")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
-        print("[*] After 5 seconds, a new request will be sent.")
-        time.sleep(5)
+        print("[*] After 20 seconds, a new request will be sent.")
+        reversCount()
