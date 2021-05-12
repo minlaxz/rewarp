@@ -90,6 +90,7 @@ while True:
         b = b + 1
         os.system("cls" if os.name == "nt" else "clear")
         print("")
+        print(result)
         print("[red][:(] Failed to connect to the server.[/red]")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
         print("[*] After 5 seconds, a new request will be sent.")
