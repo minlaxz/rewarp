@@ -1,3 +1,3 @@
-[tool.poetry.dependencies]
+[tool.rewarp.dependencies]
 python = "^3.8"
-rich
+rich = "^10.1.0"

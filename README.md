@@ -12,7 +12,7 @@ A project for getting unlimited GB on Warp+ ( https://1.1.1.1/ )
 
 ### Run the online version
 
-- [![Run on Repl.it](https://repl.it/badge/github/minlaxz/rewarp)](https://rewarp.minlaxz.repl.run)
+- [![Run on Repl.it](https://repl.it/badge/github/minlaxz/rewarp)](https://repl.it/github/minlaxz/rewarp)
 
 ### [?] How to use this script on ( windows, mac, linux )
 
