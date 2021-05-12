@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "rewarp-dependencies"
+version = "0.1.0"
+description = ""
+authors = ["Min Latt <minminlaxz@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = "^10.1.0"
