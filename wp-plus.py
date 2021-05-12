@@ -25,7 +25,7 @@ def genString(stringLength):
         letters = string.ascii_letters + string.digits
         return "".join(random.choice(letters) for i in range(stringLength))
     except Exception as error:
-        print(f"[red]{error}[/red])
+        print(f"[red]{error}[/red]")
 
 
 def digitString(stringLength):
@@ -33,7 +33,7 @@ def digitString(stringLength):
         digit = string.digits
         return "".join((random.choice(digit) for i in range(stringLength)))
     except Exception as error:
-        print(f"[red]{error}[/red])
+        print(f"[red]{error}[/red]")
 
 
 url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
@@ -65,8 +65,7 @@ def run():
         status_code = response.getcode()
         return status_code
     except Exception as error:
-        print(f"[red]{error}[/red])
-
+        print(f"[red]{error}[/red]")
 
 
 g = 0
