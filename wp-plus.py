@@ -69,10 +69,15 @@ def run():
 
 
 def reversCount():
-    for i in range(18, 0, -1):
-        print(f"\r{i}\n", end=" ")
-        sys.stdout.flush()
-        time.sleep(1)
+    try:
+        for i in range(18, 0, -1):
+            print(f"\r{i}", end=" ")
+            sys.stdout.flush()
+            time.sleep(1)
+
+    except KeyboardInterrupt:
+        print("\nUser stopped.")
+        exit()
 
 
 g = 0
@@ -92,7 +97,7 @@ while True:
     elif g == 10 or b == 5:
         print("Script is stopped.")
         print(f"[#] Total: {g} GB added. {b} Bad request(s)")
-        exit()
+        raise KeyboardInterrupt
 
     else:
         b = b + 1
